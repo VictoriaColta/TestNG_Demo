@@ -32,6 +32,11 @@ public class Configuration_Annotations_Demo {
         System.out.println("Search for a Customer");
     }
 
+    @Test(groups = {"brokenTest"})
+    public void shouldBeSkept(){
+        System.out.println("This is excluded ");
+        assert "".equals("something");
+    }
     @Test
     public void searchProduct() {
         System.out.println("Search for a Product");

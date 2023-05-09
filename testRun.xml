@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="testRun">
     <test name="TestNGDemo" preserve-order="false">
+        <groups>
+            <run>
+                <exclude name="brokenTest"></exclude>
+            </run>
+        </groups>
         <classes>
             <class name="Configuration_Annotations_Demo"/>
 
